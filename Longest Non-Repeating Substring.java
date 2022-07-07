@@ -22,3 +22,8 @@ public class Main
  }
 }
 
+
+//  OUTPUT 
+
+// String Extracted : praneshkjdfoiwlvmgb
+// Length of Extracted String : 19
