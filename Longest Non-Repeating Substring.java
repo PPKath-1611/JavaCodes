@@ -7,23 +7,31 @@ public class Main
 {
   public static void main(String[] args)
  {
-   String key = "praneshkjadsfoijhadfndepwdfskjnrewjnrlvkmnwrlkvnaeiijgnb";
-   int len = key.length();
-   char store[] = key.toCharArray();
-   String res = "";
-   for(int i=0;i<len;i++)
+   String key = "praneshkjadsfoijhadfndepwdfskjn", out = "";
+   int len_max = -1;
+   if(key.isEmpty())
    {
-      if(res.indexOf(store[i]) == -1)
-      {
-         res += store[i];
-      }
+     System.out.println(0);  
    }
-   System.out.print("String Extracted : " + res + "\n" + "Length of Extracted String : " + res.length());
+   if(key.length() == 1)
+   {
+     System.out.println(1);  
+   }
+   for(char i: key.toCharArray())
+   {
+     String curr = String.valueOf(i);
+     if(out.contains(curr))
+     {
+       out = out.substring(out.indexOf(curr) + 1);
+     }
+     out += String.valueOf(i);
+     len_max = Math.max(out.length(), len_max);
+   }
+   System.out.print("String Extracted : " + out + "\n" + "Length of Extracted String : " + len_max);
  }
 }
 
-
 //  OUTPUT 
 
-// String Extracted : praneshkjdfoiwlvmgb
-// Length of Extracted String : 19
+// String Extracted : epwdfskjn
+// Length of Extracted String : 9
