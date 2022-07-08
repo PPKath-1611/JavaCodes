@@ -1,5 +1,4 @@
-
-Code: 
+// Code: 
 
 import java.util.*; import java.io.*;
 
@@ -15,7 +14,7 @@ public class Main
    }
    if(key.length() == 1)
    {
-     System.out.print(Integer.toString(0) + "\n" + key);
+     System.out.print(Integer.toString(1) + "\n" + key);
    }
    for(char i: key.toCharArray())
    {
