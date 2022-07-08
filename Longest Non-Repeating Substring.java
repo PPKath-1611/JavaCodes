@@ -11,11 +11,11 @@ public class Main
    int len_max = -1;
    if(key.isEmpty())
    {
-     System.out.println(0);  
+     System.out.print(Integer.toString(0) + "\n" + key);  
    }
    if(key.length() == 1)
    {
-     System.out.println(1);  
+     System.out.print(Integer.toString(0) + "\n" + key);
    }
    for(char i: key.toCharArray())
    {
